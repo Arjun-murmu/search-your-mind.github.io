@@ -1,0 +1,97 @@
+header{
+    width: 100%;
+    height: 100vh;
+    
+    background:linear-gradient(rgba(0,0,5,8),rgba(39, 37, 37, 0.2)) ,url('backimg.jpg');
+    background-size: cover;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+   
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-logo{
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.side-main a{
+    color: red;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+    justify-content: center;
+    position: relative;
+}
+
+.side-main a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    transition: 0.3s linear;
+    height: 90%;
+    border-bottom: 2px solid rgb(241, 19, 19);
+
+}
+
+.side-main a:hover:before{
+    width: 80%;
+}
+main{
+    padding: 100px 200px;
+    padding-top: 200px;
+    color: white;
+    font-size: 3em;;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button{
+    align-items: center;
+
+}
+.search-box{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px 10px;
+    backdrop-filter: blur(3px) saturate(180%);
+    background: rgba(200, 200, 200, 0.2);
+}
+.search-box input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 14px 14px;
+    font-size: 20px;
+    color: #b0aecd;
+}
+
+.search-box button{
+    background: transparent;
+    
+    border: 0;
+    outline: none;
+    padding: 8px 7px;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: #c2c9ab;
+}
+::placeholder{
+    color: #a09fb5;
+}
